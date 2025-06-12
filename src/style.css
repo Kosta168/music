@@ -165,6 +165,48 @@ h2.section-title {
     margin: 30px auto;
 }
 
+/* ===  реєстрація === */
+.register-container {
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    color: #000;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.register-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.register-form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.register-form .btn {
+    background-color: #FF8800;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.register-form .btn:hover {
+    background-color: #e57300;
+}
+
+
 /* === Адаптація для телефонів === */
 @media screen and (max-width: 768px) {
     header {
@@ -224,5 +266,53 @@ h2.section-title {
     h2.section-title {
         font-size: 24px;
         width: auto;
+    }
+    
+    .register-container {
+        padding: 20px 15px;
+    }
+
+    .register-form {
+        padding: 20px;
+    }
+
+    .register-form input {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .register-form .btn {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #site-name {
+        font-size: 26px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        padding: 10px 15px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icons img {
+        width: 60px;
+        height: 60px;
     }
 }
